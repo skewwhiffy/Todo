@@ -1,0 +1,20 @@
+﻿@inherits System.Web.Mvc.WebViewPage
+
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="/Resources/Scripts/index.js"></script>
+    <title>Todo</title>
+</head>
+<body>
+    <h2>Todo</h2>
+    <div ng-app="Todo" ng-controller="homeController">
+        <p>Ooh yeah</p>
+        <ul>
+            <li ng-repeat="todoItem in list">
+                {{todoItem.title}}
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
